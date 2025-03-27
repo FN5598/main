@@ -1,0 +1,225 @@
+
+.main-novel-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.novel-header-text {
+    font-family: Roboto, Arial, Helvetica, sans-serif;    
+    color: rgb(184, 184, 184);
+}
+
+
+.main-novel-header {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid gray;
+}
+
+
+.hot-novel-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.novel-header-fire-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    padding-left: 5px;
+}
+
+.novel-header-button {
+    border: 2px solid gray;
+    padding: 5px;
+    border-bottom: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: rgb(35, 35, 35);
+    color: rgb(184, 184, 184);
+}
+
+.novel-previews {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small Images Previews */
+.novel-information {
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.novel-name-link {
+    position: absolute;
+    border: none;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gray;
+
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 2px;
+    font-size: 11px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.novel-information img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-1 {
+    max-height: 150px;
+    max-width: 120px;
+}
+
+/* Big Image Preview */
+.novel-previews-big-preview {
+    grid-row: span 2;
+    grid-column: span 2;
+    position: relative;
+    height: 320px;
+    width: 100%;
+    /* max-width: 220px; */
+}
+
+.novel-previews-big-preview img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.novel-name-big-link {
+    position: absolute;
+    border: none;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gray;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+/* Media Queiry For Shrinking Page */
+
+/* Big Size Screen */
+@media (max-width: 810px) {
+    .novel-previews {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .novel-previews-big-preview img {
+        max-height: 320px; 
+    }
+
+    .main-novel-header {
+        width: 90%;
+}
+}
+
+@media (max-width: 690px) {
+    .novel-previews {
+        grid-template-columns: repeat(6, 1fr); 
+    }
+
+    .novel-previews-big-preview img {
+        max-height: 310px; 
+    }
+}
+
+@media (max-width: 590px) {
+    .novel-previews {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+    .novel-previews-big-preview img {
+        max-height: 310px; 
+    }
+}
+
+/* Super Small Screen */
+@media (max-width: 500px) {
+    .novel-previews {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .novel-previews-big-preview img {
+        max-height: 310px; 
+    }
+}
+
+.main-latest-novel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-releases-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.last-visited {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.under-novels-previews {
+    display: grid;
+    max-width: 700px;
+}
+
+.overall-under-previews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-novel-info {
+    width: 800px;
+}

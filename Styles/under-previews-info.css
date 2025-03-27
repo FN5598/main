@@ -1,0 +1,65 @@
+.under-previews-info-table {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+
+.last-novels-read-div {
+    margin-left: 10px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    max-width: 330px;
+    width: 100%;
+}
+
+.last-novels-read-table {
+    max-height: 230px;
+    height: 100%;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.last-novels-read-head {
+    border: none;
+}
+
+.lastest-releases-head {
+    border: none;
+    text-align: left;
+}
+
+.all-genres-head {
+    text-align: right;
+    border: none;
+}
+
+.genres-table {
+    margin-top: 15px;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 330px;
+}
+
+td a {
+    color: rgb(174, 174, 174);
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.genres-title-head {
+    border: none;
+    text-align: left;
+}
+
+.link1, .link2, .links {
+    border-left: none;
+    border-right: none;
+}
+
+
